@@ -6,7 +6,8 @@
 
 ## 3.Usages
 
-1. xml布局文件中引用方法：
+* xml布局文件中引用方法：
+
 ```
 <com.yuxingxin.library.MultiRadioGroup
     android:id="@+id/multi_rg"
@@ -54,13 +55,14 @@
 
 ```
 
-2. 在代码中动态添加方法：
+* 在代码中动态添加方法：
+
 ```
 MultiRadioGroup multiRadioGroup = (MultiRadioGroup)findViewById(R.id.multi_rg);
 multiRadioGroup.addView(child,index,layoutParams);
 ```
 
-参数：
+addView方法参数：
 > 1. child: 子View,一般指RadioGroup
 > 2. index: 子View索引
 > 3. layoutParams: 布局参数
