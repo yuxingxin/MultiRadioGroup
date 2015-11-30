@@ -1,55 +1,55 @@
-## MultiRadioGroup
-我们都知道RadioGroup控件不能使多行的RadioButton互斥，所以这个控件就应用而生；
+## 1.MultiRadioGroup
+我们都知道RadioGroup控件不能使多行的RadioButton互斥，所以就有了这个控件；
 
-## screenshots
-[!image](/screenshots/tem.gif)
+## 2.Screenshots
+![image](/screenshots/tem.gif)
 
-## usages
+## 3.Usages
 
 1. xml布局文件中引用方法：
 ```
 <com.yuxingxin.library.MultiRadioGroup
-        android:id="@+id/multi_rg"
+    android:id="@+id/multi_rg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <RadioGroup
-            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="任选一"
-                />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="任选二"
-                />
-            ...
-            ...
-
-        </RadioGroup>
-        <RadioGroup
-            android:layout_width="match_parent"
+            android:text="任选一"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="任选一"
-                />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="任选二"
-                />
-            ...
-            ...
+            android:text="任选二"
+            />
+        ...
+        ...
 
-        </RadioGroup>
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任选一"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任选二"
+            />
+        ...
+        ...
+
+    </RadioGroup>
 </com.yuxingxin.library.MultiRadioGroup>
 
 ```
@@ -76,3 +76,6 @@ multiRadioGroup.setOnCheckedChangeListener(new MultiRadioGroup.OnCheckedChangeLi
     }
 });
 ```
+
+## 4.License
+MIT
