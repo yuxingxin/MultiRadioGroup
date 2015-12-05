@@ -7,7 +7,7 @@ Edit your build.gradle file and add below dependency:
 
 ```
 dependencies {
-    compile 'com.yuxingxin.mobdevgroup:library:1.0.0'
+    compile 'com.yuxingxin.multiradiogroup:library:1.0.0'
 }
 ```
 
