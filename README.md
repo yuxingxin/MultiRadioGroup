@@ -1,6 +1,16 @@
 ## 1.MultiRadioGroup
 我们都知道RadioGroup控件不能使多行的RadioButton互斥，所以就有了这个控件；
 
+### Gradle
+
+Edit your build.gradle file and add below dependency:
+
+```
+dependencies {
+    compile 'com.yuxingxin.mobdevgroup:library:1.0.0'
+}
+```
+
 ## 2.Screenshots
 ![image](/screenshots/tem.gif)
 

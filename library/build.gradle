@@ -18,8 +18,36 @@ android {
     }
 }
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'MultiRadioGroup'
+
+    publishedGroupId = 'com.yuxingxin.multiradiogroup'
+    libraryName = 'MultiRadioGroup'
+    artifact = 'library'
+
+    libraryDescription = 'This is a ViewGroup which can make multi-line RadioButton exclusive'
+
+    siteUrl = 'https://github.com/yuxingxin/MultiRadioGroup'
+    gitUrl = 'https://github.com/yuxingxin/MultiRadioGroup.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'yuxingxin'
+    developerName = 'Sean Liu'
+    developerEmail = 'lx8909@gmail.com'
+
+    licenseName = 'MIT'
+    licenseUrl = 'http://mit-license.org/'
+    allLicenses = ["MIT"]
+}
+
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
